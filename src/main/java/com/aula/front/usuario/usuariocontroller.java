@@ -13,7 +13,7 @@ public class usuariocontroller {
 
     @GetMapping("home")
     public String usuariocontroller(Model model) {// model é atributo do springboot}
-        model.addAttribute("usuariocontroller", "Bem vindo(a) a Primeira Página do site!");
+
         return "primeiraPagina";
     }
 
@@ -25,14 +25,14 @@ public class usuariocontroller {
     @PostMapping("/create")
     public String cadastroUsuario(Model model, Pessoa pessoa){
 
-        System.out.println(pessoa.nome);
-        System.out.println(pessoa.email);
-        System.out.println(pessoa.usuario);
-
         model.addAttribute("pessoa", pessoa);
+
+
+
+
+
         return "candidate/info";
     }
 
     record Pessoa (String nome, String email, String usuario){}
-
 }

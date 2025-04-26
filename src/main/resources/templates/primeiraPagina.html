@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tela principal</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <link th:href="@{/css/styleIndex.css}" rel="stylesheet">
 </head>
 <body>
+    
     <p th:text ="${usuariocontroller}"></p>
 
-    <form method = "post" th:action = "@{/create}"th:object="${pessoa}">
-        Nome: <input type="text" name="nome"/>
+    <form method = "post" class="formCadastro" th:action = "@{/create}" th:object="${pessoa}">
+        Nome<input type="text" name="nome"/>
         <br/>
-        Email : <input type="text" name="nome"/>
+        Email<input type="text" name="email"/>
         <br/>
-        Usuário : <input type="text" name="usuário"/>
-        <br>
-        <button>Cadastrar Candidato </button>
+        Usuário<input type="text" name="usuario"/>
+        <br/>
+        <button>Cadastrar</button>
     </form>
+
 </body>
-</html>
+</html>  

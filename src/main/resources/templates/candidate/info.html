@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link th:href="@{/css/styleInfo.css}" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <p>Informações</p>
+
+  <form th:object="${pessoa}">
+    <p th:text="${pessoa.nome}"></p>
+    <p th:text="${pessoa.email}"></p>
+    <p th:text="${pessoa.usuario}"></p>
+  </form>
+
+</body>
+</html>
