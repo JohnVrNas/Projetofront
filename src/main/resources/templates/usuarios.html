@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuários Cadastrados</title>
+</head>
+<body>
+<h2>Lista de Usuários</h2>
+<ul>
+    <li th:each="pessoa : ${usuarios}">
+        <span th:text="${pessoa.email}">Email</span> |
+        <span th:text="${pessoa.usuario}">Usuario</span> |
+        <span th:text="${pessoa.senha}">Senha</span>
+    </li>
+</ul>
+<a href="/cadastro">Voltar ao cadastro</a>
+</body>
+</html>

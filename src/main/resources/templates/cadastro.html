@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tela principal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link th:href="@{/styleIndex.css}" rel="stylesheet">
+
+</head>
+<body>
+
+    <p th:text ="${usercontroller}"></p>
+
+    <form method = "post" class="formCadastro" th:action = "@{/usuarios}" th:object="${pessoa}">
+        Email<input type="text" th:field="*{email}" required/><br/>
+        Usuario<input type="text" th:field="*{usuario}" required/><br/>
+        Senha<input type="password" th:field="*{senha}" required/><br/>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
