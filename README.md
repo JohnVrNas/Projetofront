@@ -67,4 +67,4 @@ http://localhost:8080/h2-console
 
 ### ✍️ Autor
 Feito por João Victor Rodrigues do Nascimneto - 11232101507 <br>
-Feito por Wellington de Castro
+Feito por Wellington de Castro - 11232101354
