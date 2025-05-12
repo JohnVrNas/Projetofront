@@ -4,9 +4,4 @@ body {
     box-sizing: border-box;
     background: linear-gradient(to bottom, rgb(33, 39, 46), rgb(20, 24, 28));
     height: 100vh;
-
-    /* Centralizar conteúdo na tela */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
